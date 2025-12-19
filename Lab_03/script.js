@@ -50,7 +50,7 @@ for (let i = 0; i < str.length; i++) {
 
 let total2 = "";
 for (let i = 0; i < total1.length; i++) {
-  if (total1[i] === "7") {
+  if (total1[i] == "7") {
     total2 += "1";
   } else {
     total2 += total1[i];
@@ -82,7 +82,7 @@ function buildTower(n) {
   let tower = [];
 
   for (let i = 0; i < n; i++) {
-    let spaces = " ".repeat(n - i - 1);
+    let spaces = " ".repeat(n - i);
     let stars = "*".repeat(i * 2 + 1);
     tower.push(spaces + stars + spaces);
   }

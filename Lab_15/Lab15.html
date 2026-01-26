@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15</title>
+    <link rel="stylesheet" href="Lab15.css">
+</head>
+<body>
+    <form id="validationForm">
+        <h3>Заполните форму:</h3>
+
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required>
+        <div class="error-message" id="surname-error"></div>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error-message" id="name-error"></div>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error-message" id="email-error"></div>
+
+        <label for="phone">Телефон (0xx)xxx-xx-xx:</label>
+        <input type="text" id="phone" name="phone" required>
+        <div class="error-message" id="phone-error"></div>
+
+        <label for="city">Город:</label>
+        <select id="city" name="city" required>
+            <option value="Минск">Минск</option>
+            <option value="Брест">Брест</option>
+            <option value="Витебск">Витебск</option>
+            <option value="Гомель">Гомель</option>
+            <option value="Гродно">Гродно</option>
+            <option value="Могилёв">Могилёв</option>
+        </select>
+
+        <div class="checkbox-container">
+            <label for="university">Я учусь в БГТУ</label>
+            <input type="checkbox" id="university" name="university">
+        </div>
+
+        <div class="radio-container">
+            <label>На каком курсе Вы учитесь?</label>
+            <label><input type="radio" name="course" value="1" required> 1</label>
+            <label><input type="radio" name="course" value="2"> 2</label>
+            <label><input type="radio" name="course" value="3"> 3</label>
+            <label><input type="radio" name="course" value="4"> 4</label>
+        </div>
+
+        <label for="about">Расскажите о себе:</label>
+        <textarea id="about" name="about" rows="4" required></textarea>
+        
+        <div class="error-message" id="about-error"></div>
+
+        <button type="submit">Проверить</button>
+    </form>
+    <script src="Lab15.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Список дел</h1>
+    <div class="input-row">
+        <input type="text" id="taskInput" placeholder="Введите название задачи">
+        <button id="addBtn" class="btn btn-green">Добавить</button>
+    </div>
+    <div class="filters">
+        <button class="btn btn-green" data-filter="all">Показать все</button>
+        <button class="btn btn-green" data-filter="completed">Показать выполненные</button>
+        <button class="btn btn-green" data-filter="not_completed">Показать не выполненные</button>
+    </div>
+    <div id="taskList"></div>
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox" class="task-check">
+            <span class="task-title"></span>
+            <div class="task-buttons">
+                <button class="btn btn-blue">Редактировать</button>
+                <button class="btn btn-red">Удалить</button>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
